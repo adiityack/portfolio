@@ -289,7 +289,7 @@ header {
 /* About */
 
 #section-about {
-  padding-left: 1.5rem;
+  padding: 1.5rem;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -398,18 +398,22 @@ media section for bigger screens     @media screen and (min-width: 980px) {*/
 
   /* media query for about section */
   #section-about {
+    display:flex;
     flex-direction: row;
     padding-left: 11.5rem;
+    
   }
   .text-zone3 #header {
-    width: 500px;
+    width: 100%;
     font-size: 3rem;
   }
   .text-zone3 p {
-    width: 400px;
+    padding:2%;
+    width: 100%;
   }
   .skills-charts {
-    margin-right: 30%;
+   max-width:50%;
+    margin-left:10%;
   }
 
 
@@ -428,16 +432,12 @@ media section for bigger screens     @media screen and (min-width: 980px) {*/
   color: #08fdd8;
 } */
 
-.skills-charts{
-  margin-left: 170px;
-}
+
 .text-zone3 h2{
   color: #08fdd8;
 }
 
-.headercard{
-  margin-left: 150px;
-}
+
 
 
 /*hhhhhhhhhhhhhhhhh*/

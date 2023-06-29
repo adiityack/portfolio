@@ -403,6 +403,7 @@ const myFunc = (navCondition) => {
     };
 
 })(window);
+// end of cursor function
 
 // Part 1 javascript functionality ends here
 $(document).ready(function () {

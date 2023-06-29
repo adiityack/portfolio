@@ -29,15 +29,20 @@
   }
   
   .hero-section{
-    align-items: flex-start;
-    background-image: linear-gradient(15deg, #0f4667 0%,rgb(29, 29, 29), 150%);
+    width:100%;
+    margin-left:15%;
+    margin-right:auto;
     display: flex;
+    align-content: space-around;
+    background-image: linear-gradient(15deg, #0f4667 0%,rgb(29, 29, 29), 150%);
+  
     min-height: 100%;
-    justify-content: center;
+    
     padding: var(--spacing-xxl) var(--spacing-l);
   }
   
   .card-grid{
+    
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: var(--spacing-l);
@@ -48,7 +53,7 @@
   
   @media(min-width: 540px){
     html,body{
-      margin: 0;
+      margin: auto;
       padding: 0;
       overflow-x: hidden;
      }
@@ -59,21 +64,26 @@
   
   @media(min-width: 960px){
     html,body{
-      margin: 0;
+      margin: auto;
       padding: 0;
       overflow-x: hidden;
      }
     .card-grid{
       grid-template-columns: repeat(4, 1fr); 
     }
-    
+   
 
   }
-  
+  @media(max-width:960px){
+    .hero-section{
+      margin-left:0;
+      margin-right:0;
+    }
+  }
   .card{
     list-style: none;
     position: relative;
-    margin-left: 80px;
+   
     margin-top: 30px;
   }
   
@@ -122,7 +132,7 @@
     margin-bottom: var(--spacing-s);
     text-transform: uppercase;
   }
-  
+ 
   .card__heading{
     color: var(--text-lighter);
     font-size: 1.9rem;
@@ -131,8 +141,11 @@
     word-spacing: 100vw;
   }
   .projecthading{
-    margin-left: 650px;
-    width: 500px;
+text-align:center;
+position: relative;
+margin-left:auto;
+margin-right:auto;
+    width: auto;
     font-size: 3rem;
     margin-top: 30px;
     font-family: sans-serif;
